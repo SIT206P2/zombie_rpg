@@ -303,3 +303,31 @@ button:active {
     border: 1px darkslateblue solid;
     border-radius: 10px;
 }
+
+.stats-bar-level {
+    display: inline-block;
+    height: 15px;
+    background-color: green;
+    border-radius: 10px;
+}
+
+.stats-value {
+    margin: 0 4px;
+}
+
+.kills .stats-value {
+    font-family: 'Creepster', serif;
+    color: orangered;
+    text-shadow: 1px 1px 2px black;
+}
+
+.life-bubble {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    background-color: green;
+    border: 1px solid darkgreen;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px black;
+}
