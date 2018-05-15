@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="UTF-8">
@@ -13,6 +12,7 @@
         <title>Zombies Attack!</title>
     </head>
     <body>
+        <div id="fear-effect"></div>
         <div id="app" data-role="page">
             <div id="title-screen">
                 <div id="title" class="creepy-text">Zombies Attack!</div>
@@ -54,7 +54,6 @@
                 </div>
             </div>
 
-
             <div class="right-side-bar"></div>
 
             <div class="panel">
@@ -86,9 +85,47 @@
 
             <div id="grid-cover"></div>
             <div class="grid"></div>
-        
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
+
+        <audio id="music" src="audio/MonsterMusic.mp3" loop>Your browser does not support the audio element.</audio>
+        <audio id="sfx-dungeon-ambience" src="audio/dungeon-ambience.mp3" loop></audio>
+        <audio id="sfx-shotgun" src="audio/shotgun.mp3"></audio>
+        <audio id="sfx-death-human" src="audio/death-human.mp3"></audio>
+        <audio id="sfx-human-insane" src="audio/human-male-insane.mp3"></audio>
+        <audio id="sfx-move-elder" src="audio/move-elder.mp3"></audio>
+        <audio id="sfx-death-elder" src="audio/death-elder.mp3"></audio>
+        <audio id="sfx-move-shoggoth" src="audio/move-shoggoth.mp3"></audio>
+        <audio id="sfx-attack-shoggoth-01" src="audio/attack-shoggoth-01.mp3"></audio>
+        <audio id="sfx-attack-shoggoth-02" src="audio/attack-shoggoth-02.mp3"></audio>
+        <audio id="sfx-attack-shoggoth-03" src="audio/attack-shoggoth-03.mp3"></audio>
+        <audio id="sfx-artifact-stone" src="audio/artifact-stone.mp3"></audio>
+
+        <script src="https://www.gstatic.com/firebasejs/3.7.6/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.7.6/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
+        <script>
+
+        </script>
+        <script src="lib/jquery-3.2.0.min.js"></script>
+        <script src="lib/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/map-options-catacombs.js"></script>
+        <script type="text/javascript" src="js/starting-options.js"></script>
+        <script type="text/javascript" src="js/items.js"></script>
+        <script type="text/javascript" src="js/quests.js"></script>
+        <script type="text/javascript" src="js/helpers.js"></script>
+        <script type="text/javascript" src="js/firebase-class.js"></script>
+        <script type="text/javascript" src="js/audio-class.js"></script>
+        <script type="text/javascript" src="js/grid-class.js"></script>
+        <script type="text/javascript" src="js/dungeon-class.js"></script>
+        <script type="text/javascript" src="js/ui-class.js"></script>
+        <script type="text/javascript" src="js/pc-class.js"></script>
+        <script type="text/javascript" src="js/player-actions-class.js"></script>
+        <script type="text/javascript" src="js/monster-class.js"></script>
+        <script type="text/javascript" src="js/monster-actions-class.js"></script>
+        <script type="text/javascript" src="js/elder-monster.js"></script>
+        <script type="text/javascript" src="js/minion-monster.js"></script>
+        <script type="text/javascript" src="js/events-class.js"></script>
+        <script type="text/javascript" src="js/turn-control.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>

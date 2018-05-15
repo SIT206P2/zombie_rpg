@@ -1,3 +1,6 @@
+/**
+ * Created by David on 3/22/17.
+ */
 
 class Audio {
     constructor() {
@@ -5,6 +8,11 @@ class Audio {
         this._musicOn = Game.gameSettings.musicOn;
     }
 
+    /**
+     * function setMusicState
+     * Turns music off/on based on passed option
+     * @param option: string
+     */
     setMusicState(option) {
         let audioEl = document.getElementById('music');
 
@@ -19,7 +27,11 @@ class Audio {
         return this._musicOn;
     }
 
-
+    /**
+     * function setSoundState
+     * Turns all sound off/on based on passed option
+     * @param option: string
+     */
     setSoundState(option) {
         let allAudio = document.getElementsByTagName('audio');
 
@@ -34,10 +46,22 @@ class Audio {
         return this._soundOn;
     }
 
+    /**
+     * function setVolume
+     *
+     * @param sound - string of audio element ID to be changed
+     * @param level - volume level between 0 and 1
+     */
     setVolume(sound, level) {
         document.getElementById(sound).volume = level;
     }
 
+    /**
+     * function playSoundEffect
+     * Plays sound provided. If probability provided, only plays sound if random number is lower than probability
+     * @param sounds: string of name of mp3 file minus the leading 'sfx-' and the trailing '.mp3'
+     * @param probability: decimal value between 0 and .99 (set to 1 if not provided)
+     */
     playSoundEffect(sounds, probability = 1) {
         let magic8BallSaysYes = Math.random() < probability,
             option = Math.floor(Math.random() * sounds.length);
