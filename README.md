@@ -14,7 +14,7 @@ Player controls by clicking on tile around character. zombie moves randomly but 
 Game ends when either player or all zombie is dead.
 
 
-Addition of player insanity, reduced by being near and interacting with monsters. If sanity reaches 0, game over. Addition of multiple zombies levels, each with different tasks:
+Addition of player insanity, reduced by being near and interacting with zombies. If sanity reaches 0, game over. Addition of multiple zombies levels, each with different tasks:
 
 1) First level: Kill monsters (only Shoggoths, no Elders)
 
